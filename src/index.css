@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+@theme {
+  --animate-spin-slow: spin 15s linear infinite;
+  --animate-bounce-subtle: bounce-subtle 2s ease-in-out infinite;
+  --animate-fade-in: fade-in 0.4s ease-out forwards;
+  --animate-pulse-slow: pulse-slow 3s ease-in-out infinite;
+
+  @keyframes bounce-subtle {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-4px); }
+  }
+  @keyframes fade-in {
+    from { opacity: 0; transform: translateY(8px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes pulse-slow {
+    0%, 100% { opacity: 1; transform: scale(1); filter: drop-shadow(0 4px 6px rgba(99, 102, 241, 0.15)); }
+    50% { opacity: 0.95; transform: scale(1.01); filter: drop-shadow(0 10px 15px rgba(99, 102, 241, 0.3)); }
+  }
+}
+
+body {
+  background-color: #f8fafc;
+  font-family: 'Inter', system-ui, sans-serif;
+  color: #1e293b;
+}
