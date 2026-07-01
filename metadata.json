@@ -1,0 +1,6 @@
+{
+  "name": "Ước mơ của em",
+  "description": "Ứng dụng giúp học sinh khám phá ước mơ nghề nghiệp và xem chân dung tương lai bằng công nghệ AI sinh ảnh.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
